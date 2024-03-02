@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <img class="menu" src="images/menu.png">
+            <img class="logo" src="images/logo.png" >
+
+            <ul>
+                <li><a>Dashboard</a></li>
+                <li><a>Connect</a></li>
+                <li><a>Moko</a></li>
+                <li><a>Notify</a></li>
+            </ul>
+            <button onclick="toggle()" id="btn" ><span id="circle"></span></button>
+        </nav>
+
+        <div class="light-container">
+            <img class="lamp" src="images/lamp.png" />
+            <img  class="light" id="lightid" src="images/light.png" />
+        </div>
+
+        <div class="text-container">
+            <h1>Welcome <br> latest Lamps</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nostrum aspernatur quasi esse harum deleniti molestias fugiat rem at sunt, tempora reiciendis velit illo corrupti, incidunt eos reprehenderit labore numquam.</p>
+            <button>Check All</button>
+
+            <div class="para-container">
+                <p>04</p>
+                <div class="scroll-bar"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+     
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var circle = document.getElementById('circle');
+        var light = document.getElementById('lightid');
+
+        function toggle(){
+            btn.classList.toggle('active');
+            circle.classList.toggle('span_active');
+            light.classList.toggle('light-on');
+        }
+    </script>
+</body>
+</html>
